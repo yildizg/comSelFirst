@@ -1,0 +1,21 @@
+
+        Selenium Day1
+        -setProperty() :driver imizi tanitir
+        -driveri kullanmak icin obje olustururuz, ChromeDriver() dan olusturuyorduk, WebDriver interface oldugu icin
+        - driver.methodName()
+            *get() : url gider, String return eder
+            *quit() : browserda acik tum sekmelerden cikis yapar
+            *close() : gecerli sekmeyi kapatir, obje de sonrasinda kullanilmaz
+            *getTitle() : sayfa basligini String olarak return eder
+            *getCurrentUrl() : sayfa url ini String olarak return eder
+        -driver.navigate().methodName()
+            *to() : get () gibi, url e gider
+            *back() : bir onceki sayfa url ine gider
+            *forward() : bir sonraki sayfa url ine gider
+            *refresh() : bulundugu sayfada yenleme yapar
+        -driver.manage().window().methodname()
+            *maximize()
+            *minimize()
+            *fullScreen()
+            *getPosition()
+            *getSize()
