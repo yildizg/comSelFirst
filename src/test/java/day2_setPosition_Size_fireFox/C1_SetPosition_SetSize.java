@@ -5,7 +5,7 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class C1_SEtPosition_SetSize {
+public class C1_SetPosition_SetSize {
     /* Go to the Amazon URL : https://www.amazon.com/
         à Print the position and size of the page.
                 à Adjust the position and size of the page as desired.

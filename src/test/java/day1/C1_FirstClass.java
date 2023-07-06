@@ -7,26 +7,27 @@ public class C1_FirstClass {
         public static void main(String[] args) {
             //Seleniumla calismaya basladigimizda once hangi driver ile calsacagimizi belirtmemiz gerek
             //Driver araciligi ile browser ile iletisim kuracagiz
-            //System.setProperty methodu : driver i tanitir..2 parametere ister, ,
+            //System.setProperty methodu : driver i tanitir.2 parametere ister, ,
             // ilki kullancagimiz browsera ait driverdir,
             // ikincisi de selenium sitesinden indirip projemize ekledigimiz chrome driver in pathi
             //windows kullanicilari sonunda .exe varken , apple kullananlarda yoktur..
 
-            System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe"); //windows driver tanitilir
+            System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe"); //windows a driver tanitilir
             //System.setProperty("webdriver.chrome.driver","drivers/chromedriver"); //mac
 
             //Driver pathi belirtildiktean sonra, driver objemizi olusturmaliyiz..
 
             WebDriver driver = new ChromeDriver();
+
             //chrome driver in implement ettigi methodlari kullaniriz
 
             driver.get("https://www.google.com/");
 
-            //get() methodu: driver ile bir siteyi acmak istersekdriver objemizin get() methodunu kullaniriz
-            //driver imiza  get komutu ile google.com a gitmasinzi soyledik
+            //get() methodu: driver ile bir siteyi acmak istersek driver objemizin get() methodunu kullaniriz
+            //driver imiza  get komutu ile google.com a gitmesini soyledik.
 
             //hicbir adrese yonlendirmesek de;
-            // ChromeDriver() constructorindan uretilen driver objesi bos bir WebDriver acar
+            // ChromeDriver() constructor indan uretilen driver objesi bos bir WebDriver acar.
 
             driver.get("https://www.amazon.com/");
 

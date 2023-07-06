@@ -1,0 +1,21 @@
+
+    USER STORY and ACCEPTANCE CRITERIAS
+    USER STORY : As a User I should be able to register to the application (Bir kullanici olarak uygulamaya kayit olabilmeliyim)
+    ACCEPTANCE CRITERIAS
+     -email should include "@" and "." characters(email ve nokta isaretlerini icermelidir)
+     -password should be at least 8 characters long(sifre an az 8 karakterden olusmalidir)
+     -password should have at least an uppercase letter and a lowecase letter (sifrede en az 1 buyuk harf ve 1 kucuk harf bulunmalidir)
+    TC_001(Positive) : Kullanici gecerli email ve sifreyle giris yaptiginda sisteme kayit olabilmeli ve ana sayfaya yonlenmelidir..
+        -kullanici register sayfasini acar
+        -kullanici email alanina "validName@gmail.com" yazar
+        -kullanici sifre alanina "valiidPassword" yazar
+        -kullanici kayıt ol butonuna basar
+        -kullanici sisteme kayitli oldugunu goruntuleyebilmelidir
+        Expected Result == Actual Result ->test is PASSED
+    TC_001(Negative) : Kullanici gecerli email ve sifreyle giris yaptiginda sisteme kayit olabilmeli ve ana sayfaya yonlenmelidir..
+        -kullanici register sayfasini acar
+        -kullanici email alanina "validName@gmail.com" yazar
+        -kullanici sifre alanina "uNvalidPassword" yazar
+        -kullanici kayıt ol butonuna basar
+        -kullanici ekranda gecersiz sifre hata mesajini goruntuleyebilmelidir
+        Expected Result != Actual Result ->test is FAILED
